@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Capsloki</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="div_menu">
+		<div class="flex">
+			<span class="empresa-logo margem-menu">Capsloki</span>
+		</div>
+		<center>
+			<p class="font_large margin_top_menu white">
+				Adquira já a solução perfeita para o seu estacionamento
+				e começe a lucrar mais.
+			</p>
+		</center>
+
+		<center>
+			<div>
+				<button id="btn_login"><a href="Login/login.html">Entrar</a></button>
+				<button id="btn_cadastrar">Cadastrar</button>
+			</div>
+		</center>
+	</div>
+
+	<div>
+		<button id="btn_contato" class="btn_imagem" onclick="contato()" ondblclick="fechar()">
+			<p><img src="imagens/contato.png" width="50%"> </p>
+			<h2 style="color:#0090ff">Contato</h2>
+			<p style=" font-size: 16px">Entre em contato com a nossa empresa</p>
+		</button>
+
+		<button id="btn_equipe" class="btn_imagem" onclick="equipe()" ondblclick="fechar()" >
+			<p><img src="imagens/equipe.png" width="50%" class="margem_bottom_imagem"> </p>
+			<h2 style="color: #0090ff">Equipe</h2>
+			<p style=" font-size: 16px">Conheça a empresa Capsloki e nossos colaboradores </p>
+		</button>
+
+		  <button id="btn_solucao" class="btn_imagem" onclick="solucao()" ondblclick="fechar()">
+			<p><img src="imagens/solucao.png" width="50%" class="margem_bottom_imagem"> </p>
+			<h2 style="color:#0090ff">Solução</h2>
+			<p style=" font-size:1.2em">Conheça um pouco sobre a nossa solução SGVE.</p>
+		  </button>
+	</div>
+
+	<div id="sobre">
+		<p id="texto_sobre">
+	</div>
+
+	<div id="rodape">
+		<p>
+			<center>
+				© 2020 desing by Capsloki.
+			</center>
+		</p>
+	</div>
+</body>
+
+<script>
+	function contato(){
+		sobre.style.display = 'block';
+		texto_sobre.innerHTML = `Entre em contato com nosco pelo WhatsApp: (11)99999-9999
+		<br> Ou por e-mail: contato@capsloki.com.br.`;
+	}
+	function equipe(){
+		sobre.style.display = 'block';
+		texto_sobre.innerHTML = `Nossa equipe é unida e esta pronta para resolver 
+		e dar suporte ao nosso serviço.`;
+	}
+	function solucao(){
+		sobre.style.display = 'block';
+		texto_sobre.innerHTML = `Nossa solução é um Sistema Gerenciador de vagas para Estacionamentos,
+		ele funciona dectando quais vagas estão ocupadas e mostrando em um mapa de estacionamento, mostra quais são as vagas
+		mais utilizadas, apresenta em gráficos a ocupação do estacionamento ao longo do tempo, e sugere preços em tempo real
+		de acordo com a ocupação.`;
+	}
+	function fechar(){
+		sobre.style.display = 'none';
+	}
+</script>
+</html>
