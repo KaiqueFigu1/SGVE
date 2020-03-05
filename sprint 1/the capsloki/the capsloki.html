@@ -9,10 +9,10 @@
 <body>
 	<div id="div_menu">
 		<div class="flex">
-			<span class="empresa-logo margem-menu">Capsloki</span>
+			<span class="empresa-logo margem-menu" style="color:white" ><B><I>CAPSLOKI</I> </B></span>
 		</div>
 		<center>
-			<p class="font_large margin_top_menu white">
+			<p id="texto" class="font_large margin_top_menu white">
 				Adquira já a solução perfeita para o seu estacionamento
 				e começe a lucrar mais.
 			</p>
@@ -45,11 +45,11 @@
 			<p style=" font-size:1.2em">Conheça um pouco sobre a nossa solução SGVE.</p>
 		  </button>
 	</div>
-
+<center>
 	<div id="sobre">
 		<p id="texto_sobre">
 	</div>
-
+</center>
 	<div id="rodape">
 		<p>
 			<center>
@@ -62,20 +62,22 @@
 <script>
 	function contato(){
 		sobre.style.display = 'block';
-		texto_sobre.innerHTML = `Entre em contato com nosco pelo WhatsApp: (11)99999-9999
-		<br> Ou por e-mail: contato@capsloki.com.br.`;
+		texto_sobre.innerHTML = `<h1>Entre em contato conosco pelo:</h1> <br><br>
+			<img src="imagens/w.png"  width="30px">	WhatsApp: (11)99999-9999
+        <br> <img src="imagens/e.png"  width="30px"> e-mail: contato@capsloki.com.br.`;
 	}
 	function equipe(){
 		sobre.style.display = 'block';
-		texto_sobre.innerHTML = `Nossa equipe é unida e esta pronta para resolver 
-		e dar suporte ao nosso serviço.`;
+		texto_sobre.innerHTML = `<h1>Equipe</h1>Nossa equipe é unida e esta pronta para resolver 
+		e dar suporte ao nosso serviço<br> contamos com os os melhores profissionais para achar a melhor solucão para o seu negocio<br>
+		nossa maior misao poder entregar o melhor para você.`;
 	}
 	function solucao(){
 		sobre.style.display = 'block';
-		texto_sobre.innerHTML = `Nossa solução é um Sistema Gerenciador de vagas para Estacionamentos,
+		texto_sobre.innerHTML = `<h1 style="color:;">SGVE</h1><p>Nossa solução é um Sistema Gerenciador de vagas para Estacionamentos,
 		ele funciona dectando quais vagas estão ocupadas e mostrando em um mapa de estacionamento, mostra quais são as vagas
 		mais utilizadas, apresenta em gráficos a ocupação do estacionamento ao longo do tempo, e sugere preços em tempo real
-		de acordo com a ocupação.`;
+		de acordo com a ocupação.</p>`;
 	}
 	function fechar(){
 		sobre.style.display = 'none';

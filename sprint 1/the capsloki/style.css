@@ -1,10 +1,17 @@
 body {
     margin: 0px;
+   
+}
+body p li a h2 button {
+    
+    font-family:'Arial Narrow Bold';
 }
 
 #div_menu {
     padding: 5px;
     background-image: url(imagens/background.jpg);
+    height:600px ;
+    background-size: cover
 }
 
 .flex{
@@ -28,18 +35,27 @@ body {
 .margin_top_menu{
     margin-top: 100px;
 }
+#texto{
+
+    font-size: 3em;
+}
 
 .white{
     color: white;
 }
 
+#btn_login a{
+    color: black;
+}
 #btn_login{
+
+
     width: 150px;
     height:40px;
-    background-color:#0090ff;
+    background-color:white;
     border: none;
     border-color: white;
-    color: white;
+    color:black;
     font-size: 1.2em;
 }
 
@@ -72,20 +88,24 @@ body {
 #rodape{
     margin-bottom: 0px;
     width:100%;
-    background-color: #0090ff;
-    color: white;
+    background-color:transparent;
+    color:black;
     font-size: 14px;
 }
 
 #sobre{
     display: none;
-    width: 95%;
-    border: 1px solid #FFFFFF;
+    width: 90%;
+    border: 8px solid #030f38;
     background-color: #0090ff;
     margin-left: 20px;
     padding: 5px;
     color: white;
-    font-size: 20px;
+    font-size: 1.5em;
+    height: 300px;
+    border-radius: 30px;
+    text-align: center;
+    opacity: 0.9;
 }
 
 a:link{
