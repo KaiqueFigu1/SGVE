@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(slides/login.jpg);
+    background-image: url(fundoC.jpg);
     background-size: cover;
     font-family: "Comfortaa", sans-serif;
 }
@@ -88,3 +88,4 @@ h1 {
     transition: 0.2s;
     color: #ff4d4d;
    }
+
