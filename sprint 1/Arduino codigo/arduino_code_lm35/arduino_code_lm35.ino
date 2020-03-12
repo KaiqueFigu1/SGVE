@@ -8,14 +8,7 @@ int linha = 0;
 
 void setup() {
  
-  Serial.begin(9600);
- 
-  Serial.println("CLEARDATA");
-  
-
-  //Serial.println("LABEL, Hora, Temperatura, linha"); 
-  Serial.println("Temperatura");
-  
+  Serial.begin(9600);  
 }
 
 void loop() { 
@@ -29,17 +22,12 @@ void loop() {
 
   linha++; 
 
- // Serial.print("DATA, TIME, ");
-
-  Serial.print(temperatura); 
-//  Serial.print(","); 
+ Serial.print(temperatura); 
  Serial.println(" ");
 
  if(linha > 100){
-
-linha = 0;
-Serial.println("row,set,2");
- }
-delay(1000);
-
+  linha = 0;
+  Serial.println("row,set,2");
+ } 
+delay(1000)
 }
