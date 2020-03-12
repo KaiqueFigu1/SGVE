@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="Stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simule seu faturamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tudo">
+            <div class="login">
+        <div class="div_form">
+            <form>
+                Quantidade da vagas do seu estacionamento: <br> <input type="number" id="vagas">
+                <br>
+                <span>Quantidade de carros por hora:</span> <br> <input type="number" id="carrosHora">
+                <br>
+                <spumps>Preço cobrado por hora:</spumps> <br> <input type="number" id="precoHora" on>
+                <br>
+            </form>
+            <a href="#" class="botao" onclick="Simular()">Simular</a>
+        </div>
+            <div id="div_mensagem"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    function Simular(){
+        var cliente = carrosHora.value * precoHora.value;
+        var simulado = ( (Number(carrosHora.value) + Number(vagas.value / 5)) * precoHora.value)
+        div_mensagem.innerHTML = `<p>Seu faturamento por dia é de R$${cliente.toFixed(2)},
+            o que conosco tenderia para aproximadamente R$${simulado.toFixed(2)}, Aproveite!!</p>`
+    }
+</script>
